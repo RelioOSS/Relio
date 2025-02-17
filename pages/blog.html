@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relio Blog - Security Insights & Updates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --notion-black: #2F3437;
+      --notion-gray: #787774;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFFFFF;
+      color: var(--notion-black);
+    }
+    
+    .nav-link {
+      color: var(--notion-gray);
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover {
+      color: var(--notion-black);
+    }
+    
+    .btn-notion {
+      background-color: var(--notion-black);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .btn-notion:hover {
+      background-color: #000000;
+    }
+    
+    .blog-card {
+      transition: background-color 0.2s ease;
+    }
+    .blog-card:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+    
+    .notion-title {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    
+    .notion-text {
+      color: var(--notion-gray);
+      line-height: 1.6;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      background-color: #F0F0F0;
+      color: var(--notion-gray);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="../index.html" class="text-xl font-semibold tracking-tight">Relio</a>
+        </div>
+        <div class="flex items-center space-x-8">
+          <a href="#" class="nav-link text-sm">Products</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-black">Blog</a>
+          <a href="about.html" class="nav-link text-sm">About</a>
+          <a href="https://github.com/reliooss" class="btn-notion text-sm">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Header -->
+  <div class="pt-32 pb-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div data-aos="fade-up">
+        <h1 class="notion-title text-4xl mb-6">Blog</h1>
+        <p class="notion-text text-xl max-w-2xl">
+          Insights, updates, and thoughts on security, open source, and building safer tools for everyone.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Posts -->
+  <div class="pb-24">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="space-y-4">
+        <!-- Featured Post -->
+        <a href="#" class="block">
+          <article class="blog-card p-8 rounded-lg" data-aos="fade-up">
+            <div class="flex items-start gap-8">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="tag">Featured</span>
+                  <span class="tag">Security</span>
+                  <span class="text-sm text-gray-500">Feb 15, 2025</span>
+                </div>
+                <h2 class="text-2xl font-semibold mb-3">Building Secure Systems: A Community Approach</h2>
+                <p class="notion-text mb-4">How open source collaboration is reshaping the future of security tools and making them more accessible to everyone.</p>
+                <div class="flex items-center gap-3">
+                  <img src="/api/placeholder/32/32" alt="Author" class="w-8 h-8 rounded-full"/>
+                  <span class="text-sm text-gray-500">by Sarah Chen</span>
+                </div>
+              </div>
+              <img src="/api/placeholder/300/200" alt="Blog Post" class="w-72 h-48 rounded-lg object-cover"/>
+            </div>
+          </article>
+        </a>
+
+        <!-- Regular Posts -->
+        <a href="#" class="block">
+          <article class="blog-card p-8 rounded-lg" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="tag">Tools</span>
+              <span class="text-sm text-gray-500">Feb 12, 2025</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3">Introducing Our New Security Scanner</h2>
+            <p class="notion-text mb-4">A deep dive into our latest tool and how it's helping organizations stay secure.</p>
+            <div class="flex items-center gap-3">
+              <img src="/api/placeholder/32/32" alt="Author" class="w-8 h-8 rounded-full"/>
+              <span class="text-sm text-gray-500">by Alex Rivera</span>
+            </div>
+          </article>
+        </a>
+
+        <a href="#" class="block">
+          <article class="blog-card p-8 rounded-lg" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="tag">Community</span>
+              <span class="text-sm text-gray-500">Feb 10, 2025</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3">Community Spotlight: January Contributors</h2>
+            <p class="notion-text mb-4">Celebrating the amazing contributions from our open source community this month.</p>
+            <div class="flex items-center gap-3">
+              <img src="/api/placeholder/32/32" alt="Author" class="w-8 h-8 rounded-full"/>
+              <span class="text-sm text-gray-500">by Maria Kowalski</span>
+            </div>
+          </article>
+        </a>
+
+        <a href="#" class="block">
+          <article class="blog-card p-8 rounded-lg" data-aos="fade-up">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="tag">Tutorial</span>
+              <span class="text-sm text-gray-500">Feb 8, 2025</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3">Getting Started with Relio's Security Suite</h2>
+            <p class="notion-text mb-4">A comprehensive guide to setting up and using our security tools effectively.</p>
+            <div class="flex items-center gap-3">
+              <img src="/api/placeholder/32/32" alt="Author" class="w-8 h-8 rounded-full"/>
+              <span class="text-sm text-gray-500">by James Wilson</span>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
+  </script>
+</body>
+</html>

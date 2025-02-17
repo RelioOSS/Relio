@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Relio - Our Mission & Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --notion-black: #2F3437;
+      --notion-gray: #787774;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFFFFF;
+      color: var(--notion-black);
+    }
+    
+    .nav-link {
+      color: var(--notion-gray);
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover {
+      color: var(--notion-black);
+    }
+    
+    .btn-notion {
+      background-color: var(--notion-black);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .btn-notion:hover {
+      background-color: #000000;
+    }
+    
+    .notion-title {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    
+    .notion-text {
+      color: var(--notion-gray);
+      line-height: 1.6;
+    }
+    
+    .section-border {
+      border: 1px solid #EAEAEA;
+      transition: all 0.2s ease;
+    }
+    .section-border:hover {
+      border-color: #E0E0E0;
+      background-color: rgba(0, 0, 0, 0.01);
+    }
+
+    .value-card {
+      transition: transform 0.2s ease;
+    }
+    .value-card:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="../index.html" class="text-xl font-semibold tracking-tight">Relio</a>
+        </div>
+        <div class="flex items-center space-x-8">
+          <a href="#" class="nav-link text-sm">Products</a>
+          <a href="blog.html" class="nav-link text-sm">Blog</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-black">About</a>
+          <a href="https://github.com/reliooss" class="btn-notion text-sm">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Header -->
+  <div class="pt-32">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-3xl" data-aos="fade-up">
+        <span class="text-sm text-gray-500">About Us</span>
+        <h1 class="notion-title text-4xl md:text-5xl mt-4 mb-6">Making Security Accessible to Everyone</h1>
+        <p class="notion-text text-xl">
+          We're on a mission to democratize security tools through open source collaboration. 
+          Built by the community, for the community.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="py-20">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="section-border rounded-lg p-8 md:p-12" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold mb-6">Our Mission</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <p class="notion-text mb-6">
+              At Relio, we believe that strong security tools shouldn't be a privilege. They should be accessible 
+              to everyone, regardless of their resources or technical expertise.
+            </p>
+            <p class="notion-text">
+              Through open source collaboration, we're building a suite of security tools that are powerful 
+              enough for enterprise use, yet simple enough for individual developers.
+            </p>
+          </div>
+          <div class="relative">
+            <img src="../assets/images/mission.png" alt="Mission illustration" class="rounded-lg w-full object-cover"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Values Section -->
+  <div class="py-12">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-2xl font-semibold mb-12" data-aos="fade-up">Our Values</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="value-card p-6 rounded-lg section-border" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-2xl mb-4">🌍</div>
+          <h3 class="text-lg font-semibold mb-3">Open & Accessible</h3>
+          <p class="notion-text">We believe in transparency and making security tools available to everyone.</p>
+        </div>
+        <div class="value-card p-6 rounded-lg section-border" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-2xl mb-4">🤝</div>
+          <h3 class="text-lg font-semibold mb-3">Community First</h3>
+          <p class="notion-text">Our community drives our development and shapes our future.</p>
+        </div>
+        <div class="value-card p-6 rounded-lg section-border" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-2xl mb-4">🛡️</div>
+          <h3 class="text-lg font-semibold mb-3">Security by Design</h3>
+          <p class="notion-text">We build with security best practices at our core.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="py-20">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-2xl font-semibold mb-12" data-aos="fade-up">Our Community</h2>
+      <div class="section-border rounded-lg p-8 md:p-12" data-aos="fade-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Join Our Growing Community</h3>
+            <p class="notion-text mb-6">
+              Relio is powered by contributors from around the world. From security researchers to developers, 
+              our community is what makes Relio possible.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://github.com/reliooss" class="btn-notion">Join on GitHub</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-4">
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+            <img src="/api/placeholder/80/80" alt="Contributor" class="w-16 h-16 rounded-full"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
+  </script>
+</body>
+</html>
