@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relio - Open Source Security Tools</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --notion-black: #2F3437;
+      --notion-gray: #787774;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFFFFF;
+      color: var(--notion-black);
+    }
+    
+    .nav-link {
+      color: var(--notion-gray);
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover {
+      color: var(--notion-black);
+    }
+    
+    .btn-notion {
+      background-color: var(--notion-black);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .btn-notion:hover {
+      background-color: #000000;
+    }
+    
+    .btn-notion-outline {
+      border: 1px solid var(--notion-gray);
+      color: var(--notion-black);
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .btn-notion-outline:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    .notion-title {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    
+    .notion-text {
+      color: var(--notion-gray);
+      line-height: 1.6;
+    }
+    
+    .emoji {
+      font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .hero-image {
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <span class="text-xl font-semibold tracking-tight">Relio</span>
+        </div>
+        <div class="flex items-center space-x-8">
+          <a href="#" class="nav-link text-sm">Products</a>
+          <a href="#" class="nav-link text-sm">Blog</a>
+          <a href="#" class="nav-link text-sm">About</a>
+          <a href="https://github.com/reliooss" class="btn-notion text-sm">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="pt-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="pt-20 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Text Content -->
+          <div data-aos="fade-up">
+            <div class="text-sm text-gray-500 mb-6">👋 Welcome to Relio</div>
+            <h1 class="notion-title text-5xl md:text-6xl mb-8">
+              Security Tools for Humanity
+            </h1>
+            <p class="notion-text text-xl mb-12 max-w-2xl">
+              Open source solutions that make the digital world safer for everyone. Built with love by the community, for the community. 
+              <span class="emoji">❤️</span>
+            </p>
+            <div class="flex space-x-4">
+              <a href="https://github.com/reliooss" class="btn-notion">
+                Get Started
+              </a>
+              <a href="#" class="btn-notion-outline">
+                Learn More
+              </a>
+            </div>
+          </div>
+          
+          <!-- Image -->
+          <div class="relative h-full flex items-center justify-center" data-aos="fade-up" data-aos-delay="100">
+            <img src="notion.png" alt="Relio Security Tools" class="hero-image w-full" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="bg-gray-50">
+    <div class="max-w-7xl mx-auto px-8 py-24 text-center">
+      <div data-aos="fade-up">
+        <span class="emoji text-4xl mb-6 block">🚀</span>
+        <h2 class="notion-title text-4xl mb-6">Join the Mission</h2>
+        <p class="notion-text text-xl mb-12 max-w-xl mx-auto">
+          Help us make the internet safer for everyone. Your contribution matters.
+        </p>
+        <a href="https://github.com/reliooss" class="btn-notion">
+          Start Contributing
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
+  </script>
+</body>
+</html>
